@@ -1,0 +1,465 @@
+<html>
+  <head>
+    <title>CiberMynd.net </title>
+    <meta charset="UTF-8">
+	<link rel="icon" href="mando.ico">
+    <style>
+	
+	/* Estilos CSS para el body */
+	
+		body {
+		  background-color: lightcyan;
+		  background-repeat: repeat;
+		  background-size: contain;
+		  background-position: center center;
+		  margin: 150px auto;
+		  max-width: 850px;
+		}
+     	  
+		  
+	/* Estilos CSS para el menú desplegable */
+	
+		.nav{
+		padding:0px;
+		margin:0px;
+		}	
+	
+		#header {
+		   margin:auto;
+		   width:960px;
+		   font-family:Arial;
+		   font-size: 10px;
+	
+		}
+		 
+		ul, ol {
+			 list-style:none;
+			
+		}
+		
+		.nav > li {
+			  float:left;
+		}
+		
+		.nav li a {
+			 background-color:MediumBlue;
+			 color:#fff;
+			 text-decoration:none;
+			 padding:10px 12px;
+			 display:block;
+			 font-size:20px;
+		}
+		
+		.nav li a:hover {
+			background-color:darkmagenta;
+		}
+
+		.nav li ul {
+			 display:none;
+			 position:absolute;
+			 min-width:140px;
+		}
+		
+		.nav li:hover > ul {
+			display:block;
+			
+		}
+		
+		.nav li ul li {
+			position:relative;
+		}
+
+		.nav li ul li ul {
+			right:-140px;
+			top:0px;
+		}
+		
+	
+		
+	/*Estilos para el índice*/
+	
+	.indice {
+		font-family:arial;
+		font-size:20px;
+		color:black;
+		font-weight: bold;
+		
+	
+		}
+		
+	.tituloindice {
+		font-family:arial;
+		font-size:20px;
+		color:orange;
+		font-weight: bold;
+		text-decoration: underline;
+	
+		}
+				
+	
+			
+	/* Estilos CSS fotos */
+	
+		img.izquierda {
+			float: left;
+			width: 250px;
+			height: 250px;
+			margin:5px;
+				
+		}
+
+		img.derecha {
+		  float: right;
+		  width: 250px;
+		  height: 250px;
+		  margin:5px;		  
+		}
+		
+	/* Estilo para el articulo */
+	
+	.recuadro {
+	  margin: 0 20px;
+	  background-color: MediumBlue;
+	  font-family: sans-serif;
+	  
+		}
+
+	h1 {
+	  margin: 0;
+	  background-color: Blue;
+	  font-size: 20px;
+	  color: yellow;
+	  
+	}
+
+	main {
+	  display: block;
+	  overflow: auto;
+	  background-color: none;
+	}
+
+	section {
+	  float: left;
+	  width: 50rem;
+	  border:  MediumSlateBlue 5px solid;
+	  border-top: none;
+	  margin: 0px;
+	  background-color: skyblue;
+	}
+
+	h2 {
+	  margin: 0;
+	  background-color: darkmagenta;
+	  color:fff;
+	}
+
+	article {
+	  float: left;
+	  width: 48rem;
+	  border: MediumSlateBlue 5px solid;
+	  border-top: none;
+	  margin: 10px;
+	  background-color: skyblue;
+	}
+
+	h3 {
+	  margin: 0;
+	  padding-left: 10px;
+	  background-color: MediumBlue;
+	  color: white;
+	  font-size: 1.5rem;
+	}
+
+	p {
+	  margin: 5px;
+	  
+	}
+	
+				
+	/* Estilos CSS para la tabla */
+	table {
+		border-collapse: collapse;
+		margin-top: 3px;
+		 margin-bottom: 3px;
+			 }
+			  
+	caption{
+		color:orange;
+		font-family:arial;
+		font-size:20px;
+		}
+			  
+	th, td {
+		border: 1px solid black;
+		padding: 8px;
+		text-align: center;
+	 }
+			  
+	th {
+		background-color: MediumBlue;
+		color: white;
+	}
+
+	/* Estilos CSS para el body de la tabla */
+	
+	.tabla {
+		
+		background-size: contain;
+		margin: 20px auto;
+		max-width: 1100px;
+			}
+			
+	/*Estilos footer*/
+	
+	footer {
+	  clear: both;
+	  font-weight: bold;
+	  color:white;
+	  background-color:darkmagenta;
+	}
+
+	footer p {
+	  margin: 10px 0;
+	  font-size: 0.90rem;
+	  
+	}
+	
+		
+	.marquesina{
+		  
+		background-color:blue;
+		color: yellow;
+		width:100%;
+		font-size:30px;
+		  
+	}
+	
+	/*Hardware y software */
+	
+	 .hardware-software {
+        background-color: skyblue;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .hardware-software h2 {
+        color: white;
+        border-bottom: 2px solid MediumBlue;
+        padding-bottom: 10px;
+    }
+
+    .hardware-software h3 {
+        color: white;
+    }
+
+    .hardware-software p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hardware-software ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    .hardware-software ul li {
+        margin-bottom: 5px;
+    }
+				  
+    </style>
+  </head>
+  <body>
+    <header>
+	<img src="cybermind.png" alt="cybermind.net" class="titulo">
+	<br>
+	<br>
+	<div id="header">
+		<marquee class="marquesina">BIENVENIDO A NUESTRO CIBERCAFÉ</marquee>
+		<br>
+		<br>
+			<ul class="nav">
+														
+				<li><a href="../FormularioReserva/reserva.php">Reservar</a></li>
+				
+				<li><a href="">Servicios</a>
+					<ul>
+						<li><a href="#trabajo">Área de Trabajo</a></li>
+						<li><a href="#juegos">Zona de Juegos</a></li>
+						<li><a href="#descanso">Zona de descanso</a></li>
+						<li><a href="#comida">Comida y bebida</a></li>
+						<li><a href="#hardwaresoftware">Hardware y Software</a></li>
+						
+					</ul>
+				</li>
+								
+				<li><a href="#Horario">Horario</a></li>
+				<li><a href="#precios">Precios</a></li>
+				<li><a href="#hardwaresoftware">Hardware y Software</a></li>
+				<li><a href="#Contacto">Contacto</a></li>
+			</ul>
+			
+			<br>
+			<br>
+	</div>
+	</header>
+	<br>
+	
+    <div class="indice">
+	
+        <ul>
+          <li class="tituloindice">Índice:</li>
+		  <ul>
+			  <li><a href="#quienessomos">Quienes somos</a></li>
+			  <li><a href="#servicios">Servicios</a></li>
+				<ul>
+				 <li><a href="#juegos">Zona de Juegos</a></li>
+				 <li><a href="#trabajo">Zona de Trabajo</a></li>		
+				 <li><a href="#comida">Servicio de comida y bebida</a></li>						  
+				</ul>
+								
+				<li><a href="#horario">Horario</a></li>
+				<li><a href="#precios">Precios</a></li>	
+				
+				
+				<li><a href="#hardwaresoftware">Hardware y Software</a></li>	
+				<li><a href="#contacto">Contacto</a></li>	
+		  </ul>
+		          
+        </ul>
+      </div>
+	  
+	<div class="recuadro">
+		 
+		 <h1>Cybermind</h1>
+		 
+		 <main>
+			<section>
+			
+			 <a name="servicios"><h2>Servicios</h2></a>
+			 
+			 <article>
+			 <a name="quienessomos"><h3>Quienes somos</h3></a>
+			 <p>
+			 Somos un cibercafé. CyberMind.net ofrece un ambiente acogedor y tranquilo para relajarse. También es ideal para reunirse con amigos y hacer nuevas amistades mientras disfrutáis de momentos increíbles juntos.
+			 <p>
+			 </article>
+			 <br>
+			 <article>
+			  <a name="juegos"><h3>Zona de Juegos</h3></a>
+			  <p><img src="gamezone.png" alt="zona de juegos" class="derecha"> 
+			 Sumérgete en la emoción de nuestros juegos, desde los clásicos hasta los más recientes, en nuestra zona de juegos equipada con consolas de videojuegos y ordenadores potentes. 
+			 </p>
+			 </article>
+			 <br>
+			 <article>
+			 
+			  <a name="trabajo"><h3>Ambiente de Trabajo</h3></a>
+			  <p><img src="zonatrabajo.png" alt="zona de trabajo" class="izquierda"> 
+			 Conéctate al mundo con nuestra conexión de alta velocidad, ya sea para navegar por la web o trabajar en proyectos escolares o profesionales. 
+			 Además, facilitamos tus tareas con nuestro servicio de impresión y escaneo. 
+			 </p>
+			 </article>
+			 <br>
+			 <article>
+			  <a name="comida"><h3>Servicio de Comida y bebida</h3></a>
+			  <p><img src="catering.png" alt="zona de comida" class="derecha"> 
+			 ¿Necesitas un descanso? Disfruta de una selección de bebidas y snacks mientras te relajas en nuestro cibercafé. 
+			 Y no te pierdas nuestros emocionantes eventos y torneos, desde competiciones de videojuegos hasta noches de trivia y karaoke. ¡Tu aventura comienza aquí en CyberMynd.net!</p>
+			 </article>
+			 
+			</section>
+			
+			<br>			
+		</main>	
+		
+	</div>
+	 
+	 <div class="tabla">
+	
+		<table>
+			<a name="horario"><caption>HORARIO:</caption></a>
+				<thead>
+				  <tr>
+					<th>Abrimos de Lunes a Domingo</th>
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>24 horas del día, los 7 días de la semana</td>		
+					</tr>
+				</tbody>
+	   </table>
+	</div>
+	 
+	<div class="tabla">
+	<a name="precios"></a>
+		
+		<table>
+			<caption>Precios:</caption>
+				<thead>
+				  <tr>
+					<th>PC de Juegos</th>
+					<th>PC Estándar</th>
+
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>20€/h</td>
+						<td>10€/h</td>				
+					</tr>
+					
+				</tbody>
+	   </table>
+	   
+	</div>
+	<br>
+	<br>
+</body>
+
+<a name="hardwaresoftware"><div class="hardware-software"></a>
+    <h2> Información sobre Hardware y Software</h2>
+    <p>En CyberMind.net, nos enorgullecemos de ofrecer a nuestros clientes la mejor experiencia de juego posible. Nuestras estaciones de juego están equipadas con hardware y software de alta calidad para garantizar un rendimiento óptimo y una experiencia inmersiva.</p>
+    
+    <h3>Hardware Disponible:</h3>
+    <ul>
+        <li>ordenadores de última generación con procesadores potentes y tarjetas gráficas de alta gama.</li>
+        <li>Monitores de alta resolución y frecuencia de actualización para una experiencia visual excepcional.</li>
+        <li>Periféricos de juego de calidad, incluidos teclados mecánicos, ratones ergonómicos y auriculares con cancelación de ruido.</li>
+        <li>Consolas de videojuegos populares, como PlayStation, Xbox y Nintendo Switch, disponibles en nuestras estaciones de juego.</li>
+    </ul>
+    
+    <h3>Software Instalado:</h3>
+    <p>Nuestras estaciones de juego vienen preinstaladas con una amplia selección de juegos populares, tanto para PC como para consola. Además, ofrecemos acceso a software adicional, como:</p>
+    <ul>
+        <li>Plataformas de chat de voz para comunicarse con otros jugadores.</li>
+        <li>Software de streaming para transmitir tus sesiones de juego en vivo.</li>
+        <li>Herramientas de edición de video y captura de pantalla para crear contenido de juego.</li>
+        <li>Antivirus y software de seguridad para proteger tu experiencia de juego.</li>
+    </ul>
+    
+    <p>¡Ven y descubre la potencia de nuestro hardware y la variedad de nuestro software en CyberMind.net!</p>
+</div>
+
+
+<footer>
+
+<a name="contacto"></a>	   
+		<DL>
+			<DT>Correo de contacto:</DT>
+			<DD> cybermind@gmail.com<DD>
+		</DL>
+		
+		<DL>
+			<DT>Teléfono:</DT>
+			<DD> 914722019<DD>
+		<DL>
+		<br>
+		<p>COPYRIGHT © 2024 CyberMind.net. Todos los derechos reservados.</p>
+
+</footer>
+
+<marquee class="marquesina">Gracias por su visita.</marquee>	  
+
+</html>
